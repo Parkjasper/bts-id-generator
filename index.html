@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARMY ID Card Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <h2>ARMY ID Card Generator 💜</h2>
+    <form id="idForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="city" placeholder="City" required />
+      <input type="text" id="since" placeholder="ARMY Since (e.g. 2019)" required />
+      <input type="text" id="bias" placeholder="Bias" required />
+      <input type="text" id="quote" placeholder="My bias once said..." required />
+      <input type="text" id="armyid" placeholder="ARMY ID Number" required />
+      <input type="text" id="expiry" placeholder="Expiry Date (e.g. 7/9/2035)" required />
+      <input type="file" id="photo" accept="image/*" required />
+      <button type="submit">Generate ID Card</button>
+    </form>
+  </div>
+
+  <div class="card-preview" id="cardContainer">
+    <div class="id-card" id="idCard">
+      <div class="left">
+        <img id="cardPhoto" class="photo" src="" alt="Photo" />
+      </div>
+      <div class="right">
+        <h3>ARMY SOCIETY WORLDWIDE</h3>
+        <p class="subtitle">BTS ARMY IDENTIFICATION CARD</p>
+        <p><strong>Name:</strong> <span id="cardName"></span></p>
+        <p><strong>City:</strong> <span id="cardCity"></span></p>
+        <p><strong>ARMY Since:</strong> <span id="cardSince"></span></p>
+        <p><strong>Bias:</strong> <span id="cardBias"></span></p>
+        <p><strong>My bias once said,</strong> <span id="cardQuote"></span></p>
+        <p class="sign">SIGN HERE</p>
+        <p><strong>Army ID Nr:</strong> <span id="cardArmyID"></span></p>
+        <p><strong>Expiry Date:</strong> <span id="cardExpiry"></span></p>
+      </div>
+    </div>
+    <button id="downloadBtn" style="display:none;">Download ID Card</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f2e7fa, #d4c1ec);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #999;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #6f42c1;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a32a3;
+}
+
+.card-preview {
+  margin-top: 30px;
+}
+
+.id-card {
+  display: flex;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.right {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.subtitle {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: -8px;
+  margin-bottom: 15px;
+}
+
+.sign {
+  font-style: italic;
+  color: #777;
+  margin: 20px 0 5px;
+}
